@@ -6,7 +6,8 @@ Important:
 
 1. To execute this API please run composer install and create a schema "api_pluft" on MySql.
 2. Run the migrations and seeds.
-3. Enjoy!
+3. Run "php artisan serve".
+4. Enjoy!
 
 
 
