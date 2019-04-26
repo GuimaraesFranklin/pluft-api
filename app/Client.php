@@ -12,7 +12,9 @@ class Client extends Model
 
     protected $dates = ['deleted_at'];
 
-    public function clients() {
-        return $this->hasMany('App\Client');
+    function company() {
+
+        return $this->belongsTo('App\Company');
+
     }
 }
