@@ -13,16 +13,18 @@ use Illuminate\Http\Request;
 |
 */
 
-
+/*
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+*/
+/*
 Route::get('/', function () {
     return redirect('api');
 });
+*/
 
 Route::group(['prefix' => 'v1'], function () {
 
@@ -34,6 +36,7 @@ Route::group(['prefix' => 'v1'], function () {
 
     Route::resource('slots', 'SlotsController');
     Route::resource('companies', 'CompaniesController');
+    Route::resource('clients', 'ClientsController');
 
 });
 
