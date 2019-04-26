@@ -2,69 +2,38 @@ This is a challenge for a Full Stack Developer at Pluft.
 
 For this challenge the developer has not implemented authentication to API. 
 
-API Manual
-
-Clients
-
-<h1>Get clients information</h1>
-
-------------------------------------------------------------------------------------------
-
-var request = require("request");
-
-var options = { method: 'GET',
-  url: 'http:/{your_url}/api/v1/clients',
-  headers: 
-   { 'Postman-Token': 'c2b748ad-b4f4-4af6-8791-b395c1f04826',
-     'cache-control': 'no-cache' } };
-
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
-
-  console.log(body);
-});
-
-------------------------------------------------------------------------------------------
 
 
-<h1>Get companies informations</h1>
+<h1>API Manual<h1>
 
-------------------------------------------------------------------------------------------
+<h2>Clients</h2>
 
-var request = require("request");
+GET: {your_url}/api/v1/clients 
 
-var options = { method: 'GET',
-  url: 'http://api/v1/companies',
-  headers: 
-   { 'Postman-Token': '7278478a-d6e2-4ae3-beb2-cfdd83345bb8',
-     'cache-control': 'no-cache' } };
+HEAD: {your_url}/api/v1/clients 
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
+PUT: {your_url}/api/v1/clients/{id}
 
-  console.log(body);
-});
-
-------------------------------------------------------------------------------------------
+DELETE: {your_url}/api/v1/clients/{id}
 
 
-------------------------------------------------------------------------------------------
+<h2>Companies</h2>
 
-<h1>Get slots/offers informations</h1>
+GET: {your_url}/api/v1/companies
 
-------------------------------------------------------------------------------------------
+HEAD: {your_url}/api/v1/companies
 
-var request = require("request");
+PUT: {your_url}/api/v1/companies/{id}
 
-var options = { method: 'GET',
-  url: 'http://api/v1/slots',
-  headers: 
-   { 'Postman-Token': '1c52b3dc-1427-4d56-9ceb-3c5c33787c01',
-     'cache-control': 'no-cache' } };
+DELETE: {your_url}/api/v1/companies/{id}
 
-request(options, function (error, response, body) {
-  if (error) throw new Error(error);
 
-  console.log(body);
-});
+<h2>Slots/Offers</h2>
 
+GET: {your_url}/api/v1/slots
+
+HEAD: {your_url}/api/v1/slots
+
+PUT: {your_url}/api/v1/slots/{id}
+
+DELETE: {your_url}/api/v1/slots/{id}
