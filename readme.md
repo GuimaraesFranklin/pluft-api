@@ -6,7 +6,7 @@ API Manual
 
 Clients
 
-Get clients information
+<h1>Get clients information</h1>
 
 ------------------------------------------------------------------------------------------
 
@@ -23,10 +23,11 @@ request(options, function (error, response, body) {
 
   console.log(body);
 });
+
 ------------------------------------------------------------------------------------------
 
 
-Get companies informations
+<h1>Get companies informations</h1>
 
 ------------------------------------------------------------------------------------------
 
@@ -48,7 +49,8 @@ request(options, function (error, response, body) {
 
 
 ------------------------------------------------------------------------------------------
-Get slots/offers informations
+
+<h1>Get slots/offers informations</h1>
 
 ------------------------------------------------------------------------------------------
 
