@@ -24,6 +24,11 @@ class CreateSlotsTable extends Migration
                 ->references('id')
                 ->on('companies')
                 ->onDelete('cascade');
+            $table->integer('client_id')->unsigned();
+            $table->foreign('client_id')
+                ->references('id')
+                ->on('clients')
+                ->onDelete('cascade');
             $table->timestamps();
             $table->softDeletes();
         });

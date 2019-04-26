@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class SlotsSeed extends Seeder
+class ClientsSeed extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,13 +12,14 @@ class SlotsSeed extends Seeder
      */
     public function run()
     {
-        App\Slots::create([
+        App\Client::create([
+
             'name' => str_random(10),
-            'type' =>  str_random(10),
-            'description' => str_random(100),
-            'booking' => date("Y-m-d H:i:s"),
+            'email' => str_random(10).'@cliente.com',
+            'birth' => date("Y-m-d H:i:s"),
+            'password' => bcrypt('secret'),
             'company_id' => 1,
-            'client_id' => 1,
+
         ]);
     }
 }
